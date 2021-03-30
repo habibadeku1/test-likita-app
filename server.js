@@ -37,7 +37,6 @@ app.listen(PORT, () => {
 function getAppDetails() {
 	return new Promise((resolve, reject) => {
         sa.get("https://likita.org")
-        .set('Authorization', 'Bearer ' + sessionToken)
         .then((res) => {
             console.log('appointment response string ' + JSON.stringify(res.body));
             resolve(res.body);
