@@ -36,7 +36,7 @@ app.listen(PORT, () => {
 
 function getAppDetails() {
 	return new Promise((resolve, reject) => {
-        sa.get("htpps://likita.org/api/v1/teleconsult/appointment/5")
+        sa.get("https://likita.org/api/v1/teleconsult/appointment/5")
         .then((res) => {
             console.log('appointment response string ' + JSON.stringify(res.body));
             resolve(res.body);
