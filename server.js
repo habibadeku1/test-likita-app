@@ -28,10 +28,6 @@ app.get("/test", (req,res) => {
 });
 
 
-require("./app/routes/orders.routes.js")(app);
-require("./app/routes/users.routes.js")(app);
-require("./app/routes/items.routes.js")(app);
-
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`)
